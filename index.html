@@ -1009,6 +1009,7 @@
 @media (max-width:640px){.team-card:after{font-size:58px}.news-trigger{padding:22px}.news-main strong{font-size:20px}.contact-grid{grid-template-columns:1fr}}
 
   </style>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -1481,12 +1482,55 @@
       });
     }
 
-    document.querySelectorAll(".news-trigger").forEach(trigger => {
-      trigger.addEventListener("click", () => {
-        const item = trigger.closest(".news-item");
-        if(item) item.classList.toggle("open");
+    function escapeHTML(value){
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function bindNewsTriggers(){
+      document.querySelectorAll(".news-trigger").forEach(trigger => {
+        trigger.addEventListener("click", () => {
+          const item = trigger.closest(".news-item");
+          if(item) item.classList.toggle("open");
+        });
       });
-    });
+    }
+
+    function renderNewsItems(items){
+      const board = document.querySelector(".news-board");
+      if(!board || !Array.isArray(items) || items.length === 0) return;
+
+      board.innerHTML = items.map((item, index) => `
+          <article class="news-item ${index === 0 ? "open" : ""}">
+            <button class="news-trigger" type="button">
+              <span class="news-date">${escapeHTML(item.date)}</span>
+              <span class="news-main"><strong>${escapeHTML(item.title)}</strong><span>${escapeHTML(item.summary)}</span></span>
+              <span class="news-category">${escapeHTML(item.category)}</span>
+            </button>
+            <div class="news-detail">${escapeHTML(item.detail)}</div>
+          </article>
+      `).join("");
+
+      bindNewsTriggers();
+    }
+
+    async function loadNewsItems(){
+      try{
+        const response = await fetch("data/news.json", {cache:"no-cache"});
+        if(!response.ok) throw new Error("news.json not found");
+        const data = await response.json();
+        renderNewsItems(data.items);
+      }catch(error){
+        bindNewsTriggers();
+      }
+    }
+
+    loadNewsItems();
+
 
     function copyEmailAddress(button){
       const email = button.dataset.email || "minsung4677@korea.ac.kr";
@@ -1517,6 +1561,17 @@
       }else{
         fallbackCopy();
       }
+    }
+
+
+    if(window.netlifyIdentity){
+      window.netlifyIdentity.on("init", user => {
+        if(!user){
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
     }
 
   </script>

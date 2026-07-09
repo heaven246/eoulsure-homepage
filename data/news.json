@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "date": "2026.07",
+      "category": "Notice",
+      "title": "EOULSURE official website renewal",
+      "summary": "The team homepage was renewed with sponsor, news, and contact sections.",
+      "detail": "EOULSURE is building a more official digital presence to introduce the team, organize partner information, and share updates about vehicle development, events, and collaborations."
+    },
+    {
+      "date": "2025",
+      "category": "Program",
+      "title": "Selected as Z by HP Workstation Master Ambassador",
+      "summary": "EOULSURE was selected for a workstation ambassador program supporting student engineering work.",
+      "detail": "Through the program, the team continues to expand its design and engineering capabilities across CAD, simulation, documentation, and vehicle development workflows."
+    },
+    {
+      "date": "2024–25",
+      "category": "Lecture",
+      "title": "Industry expert lecture series",
+      "summary": "EOULSURE hosted lectures with experts from Formula 1 and aerospace engineering.",
+      "detail": "The team hosted lectures with Dr. Namho Kim, the first Korean F1 engineer, and Beomjun Kim, a KAI KF-21 wing and empennage design engineer, connecting students with real engineering experience."
+    },
+    {
+      "date": "2023",
+      "category": "Campus",
+      "title": "Moved into KU PI-ville 99",
+      "summary": "The team joined Korea University's Crimson Startup Support Foundation program.",
+      "detail": "By joining PI-ville 99, EOULSURE strengthened its project infrastructure and expanded its activities beyond vehicle manufacturing into entrepreneurship and public outreach."
+    },
+    {
+      "date": "2022",
+      "category": "Expansion",
+      "title": "EOULSURE e was founded",
+      "summary": "The team expanded into education, outreach, and mobility culture activities.",
+      "detail": "EOULSURE established its entrepreneurship club, EOULSURE e, to go beyond car building and share automotive engineering and motorsports culture with a wider audience."
+    }
+  ]
+}

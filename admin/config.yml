@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site_data"
+    label: "Site Data"
+    files:
+      - name: "news"
+        label: "News"
+        file: "data/news.json"
+        format: "json"
+        fields:
+          - label: "News items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.date}} · {{fields.title}}"
+            fields:
+              - label: "Date"
+                name: "date"
+                widget: "string"
+                hint: "예: 2026.07 또는 2025"
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Notice"
+                  - "Program"
+                  - "Lecture"
+                  - "Campus"
+                  - "Expansion"
+                  - "Competition"
+                  - "Sponsor"
+                  - "Event"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Summary"
+                name: "summary"
+                widget: "string"
+              - label: "Detail"
+                name: "detail"
+                widget: "text"
