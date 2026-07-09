@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Workshop",
+      "category": "Workshop",
+      "description": "Design reviews, fabrication, assembly, and team work sessions.",
+      "image": ""
+    },
+    {
+      "title": "Testing",
+      "category": "Testing",
+      "description": "Vehicle validation, data collection, and performance improvement.",
+      "image": ""
+    },
+    {
+      "title": "Competition",
+      "category": "Competition",
+      "description": "Motorsport events, exhibitions, and engineering challenges.",
+      "image": ""
+    },
+    {
+      "title": "Team",
+      "category": "Team",
+      "description": "Members, collaborations, lectures, and community activities.",
+      "image": ""
+    }
+  ]
+}

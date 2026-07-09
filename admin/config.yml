@@ -46,3 +46,37 @@ collections:
               - label: "Detail"
                 name: "detail"
                 widget: "text"
+
+      - name: "gallery"
+        label: "Gallery"
+        file: "data/gallery.json"
+        format: "json"
+        fields:
+          - label: "Gallery items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.category}} · {{fields.title}}"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                hint: "예: Workshop, Testing, 2026 Team Photo"
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Workshop"
+                  - "Testing"
+                  - "Competition"
+                  - "Team"
+                  - "Lecture"
+                  - "Sponsor"
+                  - "Event"
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                required: false

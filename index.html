@@ -37,7 +37,10 @@
   "url": "https://eoulsure.netlify.app/",
   "logo": "https://eoulsure.netlify.app/assets/eoulsure-logo.png",
   "description": "어울수레(EOULSURE)는 고려대학교 레이싱팀으로, 학생들이 직접 차량을 설계, 제작, 테스트하는 자동차공학 및 모터스포츠 프로젝트 팀입니다.",
-  "sameAs": []
+  "sameAs": [
+    "https://instagram.com/koreauniv_eoulsure",
+    "https://www.youtube.com/@Koreauniv_eoulsure"
+  ]
 }
   </script>
 
@@ -1008,6 +1011,328 @@
 @media (max-width:980px){.mobile-menu-btn{display:grid;place-items:center}.menu{position:absolute;top:76px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 22px 18px;background:#fff;border-bottom:1px solid rgba(12,17,23,.08);box-shadow:0 22px 42px rgba(18,26,37,.10)}.menu.open{display:flex}.menu a{padding:16px 0;border-bottom:1px solid rgba(12,17,23,.08)}.menu a:last-child{border-bottom:0}.news-trigger{grid-template-columns:1fr;gap:10px}.news-category{justify-self:start}.news-detail{padding:0 28px 24px}.contact-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.team-card:after{font-size:58px}.news-trigger{padding:22px}.news-main strong{font-size:20px}.contact-grid{grid-template-columns:1fr}}
 
+  
+
+/* Upgrade: sponsor CTA, gallery, mobile polish, footer */
+.sponsor-cta{
+  margin-top:34px;
+  padding:34px;
+  border-radius:32px;
+  background:
+    linear-gradient(135deg, rgba(139,29,44,.96), rgba(12,17,23,.94)),
+    radial-gradient(circle at 90% 10%, rgba(201,164,92,.45), transparent 42%);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+  overflow:hidden;
+  position:relative;
+}
+
+.sponsor-cta:after{
+  content:"PARTNER";
+  position:absolute;
+  right:-18px;
+  bottom:-32px;
+  font-size:88px;
+  line-height:1;
+  font-weight:950;
+  letter-spacing:-.08em;
+  color:rgba(255,255,255,.07);
+  pointer-events:none;
+}
+
+.sponsor-cta span{
+  display:block;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.sponsor-cta h3{
+  margin:0 0 10px;
+  font-size:clamp(28px,3.5vw,44px);
+  line-height:1.04;
+  letter-spacing:-.06em;
+}
+
+.sponsor-cta p{
+  margin:0;
+  color:rgba(255,255,255,.72);
+  max-width:640px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.gallery-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:0 18px 48px rgba(18,26,37,.06);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.gallery-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 24px 60px rgba(18,26,37,.11);
+  border-color:rgba(139,29,44,.24);
+}
+
+.gallery-placeholder{
+  min-height:190px;
+  display:grid;
+  place-items:center;
+  color:rgba(255,255,255,.88);
+  font-size:13px;
+  font-weight:950;
+  letter-spacing:.22em;
+  background:
+    linear-gradient(145deg, rgba(12,17,23,.95), rgba(139,29,44,.82)),
+    radial-gradient(circle at 20% 20%, rgba(201,164,92,.55), transparent 35%);
+}
+
+.gallery-card div:last-child{
+  padding:24px;
+}
+
+.gallery-card span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;
+  height:36px;
+  border-radius:13px;
+  background:var(--ku-red);
+  color:#fff;
+  font-size:12px;
+  font-weight:950;
+  margin-bottom:16px;
+}
+
+.gallery-card h3{
+  margin:0 0 8px;
+  font-size:24px;
+  line-height:1.15;
+  letter-spacing:-.05em;
+}
+
+.gallery-card p{
+  margin:0;
+  color:#5b636e;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.gallery-coming-soon{
+  margin-top:22px;
+  padding:24px 28px;
+  border-radius:28px;
+  border:1px dashed rgba(139,29,44,.28);
+  background:rgba(255,255,255,.72);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+}
+
+.gallery-coming-soon strong{
+  color:var(--ku-red);
+  font-size:14px;
+  font-weight:950;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.gallery-coming-soon p{
+  margin:0;
+  color:#5b636e;
+}
+
+.site-footer{
+  background:#080c10;
+  color:#9aa5b2;
+  padding:46px 0 32px;
+  font-size:14px;
+}
+
+.footer-wrap{
+  display:grid;
+  grid-template-columns:1.2fr 1fr auto;
+  gap:28px;
+  align-items:start;
+}
+
+.footer-brand{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.footer-brand img{
+  width:146px;
+  max-width:42vw;
+  height:auto;
+  display:block;
+  background:#fff;
+  border-radius:12px;
+  padding:9px 14px;
+  box-shadow:0 12px 26px rgba(0,0,0,.18);
+  filter:none;
+}
+
+.footer-brand strong{
+  display:block;
+  color:#fff;
+  font-size:20px;
+  letter-spacing:-.04em;
+  line-height:1.1;
+}
+
+.footer-brand span{
+  display:block;
+  color:#9aa5b2;
+  margin-top:4px;
+}
+
+.footer-links,
+.footer-social{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 18px;
+}
+
+.footer-links a,
+.footer-social a{
+  color:#c8d0da;
+  font-weight:800;
+  transition:color .2s ease, transform .2s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+  color:#fff;
+  transform:translateY(-1px);
+}
+
+.footer-social a{
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;
+}
+
+.footer-bottom{
+  grid-column:1 / -1;
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+@media (max-width:980px){
+  .brand.logo-brand img{max-width:160px; height:auto;}
+  .hero{min-height:auto; padding:96px 0 74px;}
+  .cta{flex-wrap:wrap;}
+  .sponsor-cta{align-items:flex-start; flex-direction:column;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-wrap{grid-template-columns:1fr;}
+  .footer-social{justify-content:flex-start;}
+}
+
+@media (max-width:640px){
+  .wrap{width:min(100% - 28px, 1160px);}
+  .nav{height:68px;}
+  .menu{top:68px; padding-left:18px; padding-right:18px;}
+  .brand.logo-brand img{max-width:138px;}
+  .hero-inner h1{font-size:clamp(44px, 14vw, 76px);}
+  .hero-inner p{font-size:17px;}
+  .btn{width:100%; justify-content:center; text-align:center;}
+  .content-page{padding:72px 0;}
+  .section-head{margin-bottom:32px;}
+  .stats,.timeline,.sponsors{grid-template-columns:1fr;}
+  .sponsor{min-height:118px;}
+  .sponsor img{max-height:78px;}
+  .sponsor-cta{padding:28px 24px; border-radius:28px;}
+  .sponsor-cta:after{font-size:58px;}
+  .gallery-grid{grid-template-columns:1fr;}
+  .gallery-placeholder{min-height:164px;}
+  .gallery-coming-soon{align-items:flex-start; flex-direction:column;}
+  .contact-page{padding:72px 0;}
+  .contact-box{flex-direction:column; align-items:stretch; padding:26px;}
+  .contact-box strong{font-size:24px;}
+  .footer-brand{align-items:flex-start; flex-direction:column;}
+  .footer-links{gap:10px 14px;}
+}
+
+  
+@media (max-width:640px){
+  .footer-brand img{
+    width:132px;
+    padding:8px 12px;
+  }
+}
+
+  
+/* Partner CTA button one-line fix */
+.sponsor-cta .btn{
+  white-space:nowrap;
+  width:auto;
+  min-width:max-content;
+  flex:0 0 auto;
+}
+
+@media (max-width:640px){
+  .sponsor-cta .btn{
+    width:auto;
+    max-width:100%;
+    padding-left:22px;
+    padding-right:22px;
+  }
+}
+
+  
+/* Gallery CMS photo support */
+.gallery-photo{
+  width:100%;
+  min-height:180px;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  display:block;
+  background:#111820;
+}
+
+.gallery-card.has-photo .gallery-placeholder{
+  display:none;
+}
+
+.gallery-empty{
+  grid-column:1/-1;
+  padding:34px;
+  border:1px dashed rgba(139,29,44,.28);
+  border-radius:30px;
+  background:#fff;
+  color:#5e6670;
+  text-align:center;
+}
+
+.gallery-empty strong{
+  display:block;
+  color:#111820;
+  font-size:22px;
+  margin-bottom:8px;
+}
+
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -1026,6 +1351,7 @@
         <a href="?page=about" data-page-link="about">ABOUT</a>
         <a href="?page=sponsor" data-page-link="sponsor">SPONSOR</a>
         <a href="?page=news" data-page-link="news">NEWS</a>
+        <a href="?page=gallery" data-page-link="gallery">GALLERY</a>
         <a href="?page=contact" data-page-link="contact">CONTACT</a>
       </nav>
     </div>
@@ -1308,6 +1634,19 @@
             <img src="assets/sponsors/amcl.png" alt="AMCL logo" loading="lazy">
           </div>
         </div>
+
+
+        <div class="sponsor-cta">
+          <div>
+            <span>Partner with EOULSURE</span>
+            <h3>Support the next generation of automotive engineers.</h3>
+            <p>
+              EOULSURE welcomes partners in parts, materials, software, manufacturing, education,
+              and mobility technology.
+            </p>
+          </div>
+          <a class="btn primary" href="?page=contact" data-page-link="contact">Become a Partner</a>
+        </div>
       </div>
     </section>
 
@@ -1370,6 +1709,65 @@
       </div>
     </section>
 
+    <!-- GALLERY -->
+    <section class="content-page soft page" data-page="gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Gallery</div>
+            <h2 class="section-title">Workshop, testing,<br>competition, and team.</h2>
+          </div>
+          <p class="section-desc">
+            EOULSURE's visual archive will grow with vehicle development, test sessions,
+            events, and team activities. Photos can be added here as the project progresses.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <div class="gallery-placeholder">WORKSHOP</div>
+            <div>
+              <span>01</span>
+              <h3>Workshop</h3>
+              <p>Design reviews, fabrication, assembly, and team work sessions.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="gallery-placeholder">TESTING</div>
+            <div>
+              <span>02</span>
+              <h3>Testing</h3>
+              <p>Vehicle validation, data collection, and performance improvement.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="gallery-placeholder">COMPETITION</div>
+            <div>
+              <span>03</span>
+              <h3>Competition</h3>
+              <p>Motorsport events, exhibitions, and engineering challenges.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="gallery-placeholder">TEAM</div>
+            <div>
+              <span>04</span>
+              <h3>Team</h3>
+              <p>Members, collaborations, lectures, and community activities.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="gallery-coming-soon">
+          <strong>Coming Soon</strong>
+          <p>Once official photos are selected, this page can be updated into a full visual archive.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact-page page" data-page="contact">
       <div class="wrap">
@@ -1403,15 +1801,39 @@
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <span>© EOULSURE · 어울수레. Korea University Racing Team.</span>
-      <span>Designed for student engineering, motorsport, and mobility projects.</span>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-brand">
+        <img src="assets/eoulsure-logo.png" alt="EOULSURE logo">
+        <div>
+          <strong>EOULSURE</strong>
+          <span>Korea University Racing Team</span>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="?page=home" data-page-link="home">Home</a>
+        <a href="?page=about" data-page-link="about">About</a>
+        <a href="?page=sponsor" data-page-link="sponsor">Sponsor</a>
+        <a href="?page=news" data-page-link="news">News</a>
+        <a href="?page=gallery" data-page-link="gallery">Gallery</a>
+        <a href="?page=contact" data-page-link="contact">Contact</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://instagram.com/koreauniv_eoulsure" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@Koreauniv_eoulsure" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 EOULSURE · 어울수레. All rights reserved.</span>
+        <span>Designed for student engineering, motorsport, and mobility projects.</span>
+      </div>
     </div>
   </footer>
 
   <script>
-    const validPages = ["home", "about", "sponsor", "news", "contact"];
+    const validPages = ["home", "about", "sponsor", "news", "gallery", "contact"];
 
     function getInitialPage(){
       const params = new URLSearchParams(window.location.search);
@@ -1530,6 +1952,54 @@
     }
 
     loadNewsItems();
+
+    function renderGalleryItems(items){
+      const grid = document.querySelector(".gallery-grid");
+      if(!grid || !Array.isArray(items)) return;
+
+      if(items.length === 0){
+        grid.innerHTML = `
+          <div class="gallery-empty">
+            <strong>Gallery Coming Soon</strong>
+            <p>Photos will be added after official images are selected.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = items.map((item, index) => {
+        const image = String(item.image || "").trim();
+        const category = escapeHTML(item.category || "Gallery");
+        const title = escapeHTML(item.title || "Untitled");
+        const description = escapeHTML(item.description || "");
+        const number = String(index + 1).padStart(2, "0");
+
+        return `
+          <article class="gallery-card ${image ? "has-photo" : ""}">
+            ${image ? `<img class="gallery-photo" src="${escapeHTML(image)}" alt="${title}" loading="lazy">` : `<div class="gallery-placeholder">${category}</div>`}
+            <div>
+              <span>${number}</span>
+              <h3>${title}</h3>
+              <p>${description}</p>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    async function loadGalleryItems(){
+      try{
+        const response = await fetch("data/gallery.json", {cache:"no-cache"});
+        if(!response.ok) throw new Error("gallery.json not found");
+        const data = await response.json();
+        renderGalleryItems(data.items);
+      }catch(error){
+        // Keep the hardcoded coming-soon gallery as fallback.
+      }
+    }
+
+    loadGalleryItems();
+
 
 
     function copyEmailAddress(button){
