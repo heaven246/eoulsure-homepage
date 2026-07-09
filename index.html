@@ -1,0 +1,1524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="어울수레(EOULSURE)는 고려대학교 레이싱팀으로, 학생들이 직접 차량을 설계, 제작, 테스트하는 자동차공학 및 모터스포츠 프로젝트 팀입니다." />
+  <meta name="keywords" content="어울수레, EOULSURE, 고려대학교 레이싱팀, Korea University Racing Team, 고려대 자동차 동아리, 고려대학교 자작자동차, 대학생 자작자동차, 자작자동차 동아리, 모터스포츠 동아리" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eoulsure.netlify.app/" />
+
+  <!-- Paste Naver Search Advisor / Google Search Console verification meta tags below this line if needed. -->
+  <meta name="naver-site-verification" content="f5000e1d5186c60381775de1ce808a2ea995d8d2" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="어울수레 EOULSURE | Korea University Racing Team" />
+  <meta property="og:description" content="어울수레(EOULSURE)는 고려대학교 레이싱팀으로, 학생들이 직접 차량을 설계, 제작, 테스트하는 자동차공학 및 모터스포츠 프로젝트 팀입니다." />
+  <meta property="og:url" content="https://eoulsure.netlify.app/" />
+  <meta property="og:site_name" content="어울수레 EOULSURE" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:image" content="https://eoulsure.netlify.app/assets/eoulsure-logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="어울수레 EOULSURE | Korea University Racing Team" />
+  <meta name="twitter:description" content="어울수레(EOULSURE)는 고려대학교 레이싱팀으로, 학생들이 직접 차량을 설계, 제작, 테스트하는 자동차공학 및 모터스포츠 프로젝트 팀입니다." />
+  <meta name="twitter:image" content="https://eoulsure.netlify.app/assets/eoulsure-logo.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "어울수레 EOULSURE",
+  "alternateName": [
+    "EOULSURE",
+    "Korea University Racing Team",
+    "고려대학교 레이싱팀"
+  ],
+  "url": "https://eoulsure.netlify.app/",
+  "logo": "https://eoulsure.netlify.app/assets/eoulsure-logo.png",
+  "description": "어울수레(EOULSURE)는 고려대학교 레이싱팀으로, 학생들이 직접 차량을 설계, 제작, 테스트하는 자동차공학 및 모터스포츠 프로젝트 팀입니다.",
+  "sameAs": []
+}
+  </script>
+
+  <title>어울수레 EOULSURE | Korea University Racing Team</title>
+
+  <style>
+    :root{
+      --ku-red:#8b1d2c;
+      --red:#b9263a;
+      --ink:#0c1117;
+      --navy:#121a25;
+      --muted:#6d7480;
+      --line:#e7eaee;
+      --soft:#f6f4f2;
+      --card:#ffffff;
+      --gold:#c9a45c;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:auto}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--ink);
+      background:#fff;
+      line-height:1.65;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px, calc(100% - 44px)); margin:0 auto}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:#ffffff;
+      border-bottom:1px solid rgba(12,17,23,.08);
+    }
+
+    .nav{
+      height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:28px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:13px;
+      font-weight:950;
+      letter-spacing:.02em;
+      font-size:50px;
+    }
+
+    .logo-brand img{
+      display:block;
+      width:220px;
+      height:auto;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:28px;
+      font-size:13px;
+      font-weight:850;
+      letter-spacing:.12em;
+    }
+
+    .menu a{
+      color:#2b3036;
+      opacity:1;
+      cursor:pointer;
+      padding:8px 0;
+      border-bottom:2px solid transparent;
+    }
+
+    .menu a:hover,
+    .menu a:active,
+    .menu a:focus{
+      color:#2b3036;
+      opacity:1;
+    }
+
+    .menu a.active{
+      color:var(--ku-red);
+      border-bottom-color:var(--ku-red);
+    }
+
+    .page{
+      display:none;
+    }
+
+    .page.active{
+      display:block;
+    }
+
+    .hero.page.active{
+      display:flex;
+    }
+
+    .hero{
+      position:relative;
+      min-height:calc(100vh - 76px);
+      align-items:center;
+      overflow:hidden;
+      background:
+        linear-gradient(120deg, rgba(12,17,23,.94), rgba(12,17,23,.82)),
+        radial-gradient(circle at 72% 28%, rgba(185,38,58,.55), transparent 28%),
+        linear-gradient(135deg, #111827, #2b0f16);
+      color:#fff;
+    }
+
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size:64px 64px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.75), transparent 85%);
+      pointer-events:none;
+    }
+
+    .hero:after{
+      content:"";
+      position:absolute;
+      right:-130px;
+      bottom:-200px;
+      width:520px;
+      height:620px;
+      transform:skewX(-23deg);
+      background:linear-gradient(180deg, rgba(185,38,58,.95), rgba(139,29,44,.62));
+      opacity:.9;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      padding:110px 0;
+      max-width:920px;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:22px;
+      color:#f2d6da;
+      font-size:13px;
+      letter-spacing:.18em;
+      font-weight:900;
+      text-transform:uppercase;
+    }
+
+    .eyebrow:before{
+      content:"";
+      width:42px;
+      height:2px;
+      background:var(--gold);
+      display:inline-block;
+    }
+
+    .hero h1{
+      margin:0;
+      max-width:900px;
+      font-size:clamp(52px, 8vw, 104px);
+      line-height:.95;
+      letter-spacing:-.075em;
+      font-weight:950;
+    }
+
+    .nowrap{white-space:nowrap}
+
+    .hero p{
+      margin:28px 0 36px;
+      max-width:720px;
+      font-size:21px;
+      line-height:1.65;
+      color:rgba(255,255,255,.82);
+      font-weight:560;
+    }
+
+    .cta{display:flex;gap:14px;flex-wrap:wrap}
+
+    .btn{
+      min-height:52px;
+      padding:0 24px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-size:13px;
+      letter-spacing:.1em;
+      font-weight:900;
+      text-transform:uppercase;
+      border:1px solid rgba(255,255,255,.22);
+      transition:.18s ease;
+      cursor:pointer;
+    }
+
+    .btn.primary{background:#fff;color:#111}
+    .btn.secondary{background:transparent;color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+
+    .content-page{
+      min-height:calc(100vh - 76px);
+      padding:96px 0;
+    }
+
+    .content-page.soft{
+      background:linear-gradient(180deg,#fff,var(--soft));
+    }
+
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      gap:48px;
+      align-items:flex-end;
+      margin-bottom:46px;
+    }
+
+    .section-label{
+      color:var(--ku-red);
+      font-weight:950;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-size:12px;
+      margin-bottom:10px;
+    }
+
+    .section-title{
+      margin:0;
+      font-size:clamp(36px, 4.8vw, 62px);
+      line-height:1.03;
+      letter-spacing:-.07em;
+      font-weight:950;
+    }
+
+    .section-desc{
+      margin:0;
+      max-width:520px;
+      color:#4e5560;
+      font-size:18px;
+      font-weight:520;
+    }
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:24px;
+      align-items:stretch;
+    }
+
+    .panel{
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:30px;
+      padding:34px;
+      box-shadow:0 20px 55px rgba(18,26,37,.07);
+    }
+
+    .panel.dark{
+      background:var(--navy);
+      color:#fff;
+      border-color:rgba(255,255,255,.1);
+    }
+
+    .panel h3{
+      margin:0 0 14px;
+      font-size:28px;
+      letter-spacing:-.045em;
+      line-height:1.15;
+    }
+
+    .panel p{
+      margin:0;
+      color:#59616b;
+    }
+
+    .panel.dark p{color:rgba(255,255,255,.78)}
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:24px;
+    }
+
+    .stat{
+      padding:20px 18px;
+      border-radius:22px;
+      background:var(--soft);
+      border:1px solid rgba(12,17,23,.06);
+    }
+
+    .stat strong{
+      display:block;
+      color:var(--ku-red);
+      font-size:28px;
+      letter-spacing:-.045em;
+      line-height:1;
+      margin-bottom:8px;
+    }
+
+    .stat span{
+      display:block;
+      color:#5f6670;
+      font-size:13px;
+      font-weight:760;
+      line-height:1.35;
+    }
+
+    .timeline{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:26px;
+    }
+
+    .time-card{
+      padding:24px;
+      border-radius:24px;
+      background:#fff;
+      border:1px solid var(--line);
+      min-height:150px;
+    }
+
+    .time-card .year{
+      color:var(--ku-red);
+      font-size:23px;
+      font-weight:950;
+      margin-bottom:8px;
+      letter-spacing:-.02em;
+    }
+
+    .time-card .text{
+      color:#4f5660;
+      font-weight:720;
+      line-height:1.45;
+    }
+
+    .team-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+      margin-top:34px;
+    }
+
+    .team-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:32px;
+      box-shadow:0 18px 48px rgba(18,26,37,.06);
+    }
+
+    .team-card h3{
+      margin:0 0 16px;
+      font-size:29px;
+      letter-spacing:-.055em;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .team-card h3:before{
+      content:"";
+      width:12px;
+      height:12px;
+      border-radius:3px;
+      background:var(--ku-red);
+      display:inline-block;
+    }
+
+    .team-card p{
+      margin:0 0 22px;
+      color:#535b66;
+      font-weight:540;
+    }
+
+    .role-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .role{
+      padding:15px 16px;
+      border-radius:18px;
+      background:#fafafa;
+      border:1px solid var(--line);
+    }
+
+    .role strong{
+      display:block;
+      font-size:15px;
+      margin-bottom:4px;
+      color:#111820;
+    }
+
+    .role span{
+      display:block;
+      color:#5e6670;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .awards{
+      margin-top:34px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:26px;
+      background:#fff;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:14px;
+    }
+
+    th,td{
+      padding:15px 17px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+
+    th{
+      background:#f6f4f2;
+      color:#15191f;
+      font-weight:950;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+
+    tr:last-child td{border-bottom:0}
+
+    td:first-child{
+      color:var(--ku-red);
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .sponsor-page{
+      min-height:calc(100vh - 76px);
+      padding:96px 0;
+      background:var(--navy);
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .sponsor-page:before{
+      content:"";
+      position:absolute;
+      left:-160px;
+      top:-240px;
+      width:420px;
+      height:520px;
+      transform:skewX(-22deg);
+      background:rgba(185,38,58,.36);
+    }
+
+    .sponsor-page .wrap{
+      position:relative;
+      z-index:1;
+    }
+
+    .sponsor-page .section-label{color:#f1c7cc}
+    .sponsor-page .section-desc{color:rgba(255,255,255,.72)}
+
+    .sponsors{
+      position:relative;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:15px;
+    }
+
+    .sponsor{
+      min-height:126px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:22px;
+      border-radius:24px;
+      background:#ffffff;
+      border:1px solid rgba(255,255,255,.16);
+      color:#111820;
+      box-shadow:0 18px 42px rgba(0,0,0,.12);
+      font-size:20px;
+      font-weight:950;
+      letter-spacing:.02em;
+    }
+
+    .sponsor img{
+      display:block;
+      max-width:86%;
+      max-height:70px;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .sponsor.logo-wide img{
+      max-width:94%;
+      max-height:64px;
+    }
+
+    .sponsor.logo-tall img{
+      max-width:90%;
+      max-height:110px;
+    }
+
+    .sponsor.logo-square img{
+      max-width:88%;
+      max-height:96px;
+    }
+
+    .sponsor.logo-small img{
+      max-width:78%;
+      max-height:58px;
+    }
+
+    .sponsor.youngchul-logo{
+      min-height:150px;
+    }
+
+    .sponsor.youngchul-logo img{
+      max-width:96%;
+      max-height:135px;
+    }
+
+    .sponsor.text-logo{
+      background:#ffffff;
+      color:#111820;
+    }
+
+    .sponsor.text-logo span{
+      display:block;
+      opacity:1;
+      margin:0;
+      color:#111820;
+      font-size:30px;
+      font-weight:950;
+      letter-spacing:.03em;
+      text-transform:none;
+    }
+
+    .news-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .news-card{
+      border-radius:30px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 18px 48px rgba(18,26,37,.06);
+    }
+
+    .news-thumb{
+      height:190px;
+      background:
+        linear-gradient(135deg, rgba(139,29,44,.94), rgba(18,26,37,.86)),
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,.35), transparent 30%);
+      display:flex;
+      align-items:flex-end;
+      padding:24px;
+      color:#fff;
+      font-size:40px;
+      font-weight:950;
+      letter-spacing:-.06em;
+    }
+
+    .news-body{padding:26px}
+
+    .news-body .date{
+      color:var(--ku-red);
+      font-weight:950;
+      font-size:13px;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+
+    .news-body h3{
+      margin:0 0 10px;
+      font-size:23px;
+      line-height:1.2;
+      letter-spacing:-.04em;
+    }
+
+    .news-body p{
+      margin:0;
+      color:#5b636e;
+    }
+
+    .contact-page{
+      min-height:calc(100vh - 76px);
+      padding:96px 0;
+      background:
+        linear-gradient(120deg, rgba(12,17,23,.96), rgba(12,17,23,.88)),
+        linear-gradient(135deg, var(--ku-red), #111);
+      color:#fff;
+      display:flex;
+      align-items:center;
+    }
+
+    .contact-page .section-desc{color:rgba(255,255,255,.74)}
+
+    .contact-box{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:26px;
+      padding:34px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:30px;
+      background:rgba(255,255,255,.06);
+    }
+
+    .contact-box strong{
+      display:block;
+      font-size:28px;
+      letter-spacing:-.05em;
+      line-height:1.15;
+      margin-bottom:8px;
+    }
+
+    .contact-box p{
+      margin:0;
+      color:rgba(255,255,255,.72);
+    }
+
+    footer{
+      background:#080c10;
+      color:#9aa5b2;
+      padding:30px 0;
+      font-size:14px;
+    }
+
+    footer .wrap{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width:980px){
+      .menu{display:none}
+      .about-grid,.team-grid,.news-grid{grid-template-columns:1fr}
+      .timeline,.sponsors,.stats{grid-template-columns:repeat(2,1fr)}
+      .section-head{display:block}
+      .section-desc{margin-top:18px}
+    }
+
+    @media (max-width:640px){
+      .wrap{width:min(100% - 28px,1160px)}
+      .hero{min-height:620px}
+      .hero-inner{padding:80px 0}
+      .content-page,.sponsor-page,.contact-page{padding:72px 0}
+      .timeline,.sponsors,.stats{grid-template-columns:1fr}
+      .panel,.team-card,.contact-box{padding:26px}
+      .contact-box{align-items:flex-start;flex-direction:column}
+      table{font-size:13px}
+      th,td{padding:12px 10px}
+    }
+  
+/* Korea University mark */
+.hero-ku-mark{
+  position:absolute;
+  right:72px;
+  bottom:54px;
+  width:min(300px, 28vw);
+  opacity:.16;
+  z-index:1;
+  pointer-events:none;
+  filter:drop-shadow(0 20px 40px rgba(0,0,0,.18));
+}
+
+.ku-affiliation{
+  margin-top:24px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:20px 22px;
+  border-radius:24px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:0 18px 48px rgba(18,26,37,.06);
+}
+
+.ku-affiliation img{
+  width:74px;
+  height:auto;
+  flex:0 0 auto;
+}
+
+.ku-affiliation strong{
+  display:block;
+  font-size:18px;
+  letter-spacing:-.03em;
+  margin-bottom:4px;
+}
+
+.ku-affiliation span{
+  display:block;
+  color:#5f6670;
+  font-size:14px;
+  line-height:1.45;
+}
+
+@media (max-width:980px){
+  .hero-ku-mark{
+    right:28px;
+    bottom:30px;
+    width:210px;
+    opacity:.11;
+  }
+}
+
+@media (max-width:640px){
+  .hero-ku-mark{
+    width:160px;
+    right:18px;
+    bottom:22px;
+    opacity:.09;
+  }
+
+  .ku-affiliation{
+    align-items:flex-start;
+  }
+
+  .ku-affiliation img{
+    width:58px;
+  }
+}
+
+  
+.korean-summary{
+  margin-top:-20px;
+  margin-bottom:34px;
+  max-width:720px;
+  color:rgba(255,255,255,.74);
+  font-size:16px;
+  line-height:1.65;
+  font-weight:760;
+}
+
+  
+/* 2026 sponsor logo update */
+.sponsor-page .section-title{
+  letter-spacing:-.065em;
+}
+
+.sponsor.logo-tall{
+  min-height:172px;
+}
+
+.sponsor.logo-tall img{
+  max-width:92%;
+  max-height:138px;
+}
+
+.sponsor.logo-square img{
+  max-width:88%;
+  max-height:112px;
+}
+
+.sponsor.logo-wide img{
+  max-width:94%;
+  max-height:76px;
+}
+
+.sponsor img{
+  mix-blend-mode:normal;
+}
+
+@media (max-width:640px){
+  .sponsor.logo-tall{
+    min-height:150px;
+  }
+
+  .sponsor.logo-tall img{
+    max-height:120px;
+  }
+}
+
+  
+/* Youngchul Burger stacked logo */
+.sponsor.youngchul-stack{
+  min-height:210px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  padding:18px 20px;
+}
+
+.sponsor.youngchul-stack .youngchul-top{
+  max-width:88%;
+  max-height:118px;
+  object-fit:contain;
+}
+
+.sponsor.youngchul-stack .youngchul-bottom{
+  max-width:88%;
+  max-height:46px;
+  object-fit:contain;
+}
+
+@media (max-width:640px){
+  .sponsor.youngchul-stack{
+    min-height:190px;
+  }
+
+  .sponsor.youngchul-stack .youngchul-top{
+    max-height:104px;
+  }
+
+  .sponsor.youngchul-stack .youngchul-bottom{
+    max-height:42px;
+  }
+}
+
+  
+/* 2026 sponsor logo balance update */
+.sponsor{
+  min-height:136px;
+  padding:18px 22px;
+}
+
+.sponsor img{
+  max-width:92%;
+  max-height:88px;
+  object-fit:contain;
+}
+
+.sponsor.logo-wide img{
+  max-width:94%;
+  max-height:88px;
+}
+
+.sponsor.logo-square img{
+  max-width:88%;
+  max-height:102px;
+}
+
+/* 영철버거는 위 캐릭터 + 아래 텍스트 균형 */
+.sponsor.youngchul-stack{
+  min-height:136px;
+  gap:8px;
+  padding:14px 18px;
+}
+
+.sponsor.youngchul-stack .youngchul-top{
+  max-width:74%;
+  max-height:70px;
+}
+
+.sponsor.youngchul-stack .youngchul-bottom{
+  max-width:78%;
+  max-height:34px;
+}
+
+/* 원본 이미지에 여백이 많거나 작게 보이는 로고 보정 */
+.sponsor.logo-tektronix img{ transform:scale(2.15); }
+.sponsor.logo-nswel img{ transform:scale(2.05); }
+.sponsor.logo-nordlock img{ transform:scale(2.25); }
+.sponsor.logo-bender img{ transform:scale(2.2); }
+.sponsor.logo-ntrex img{ transform:scale(1.35); }
+.sponsor.logo-cadence img{ transform:scale(1.2); }
+.sponsor.logo-keunyung img{ transform:scale(1.28); }
+.sponsor.logo-xgarage img{ transform:scale(1.12); }
+.sponsor.logo-woonri img{ transform:scale(1.18); }
+.sponsor.logo-3dconnexion img{ transform:scale(1.12); }
+.sponsor.logo-solvers img{ transform:scale(1.12); }
+.sponsor.logo-eleparts img{ transform:scale(1.22); }
+.sponsor.logo-tilton img{ transform:scale(1.18); }
+.sponsor.logo-linsol img{ transform:scale(1.08); }
+.sponsor.logo-kualumni img{ transform:scale(1.5); }
+.sponsor.logo-amcl img{ transform:scale(1.08); }
+
+/* 이미 충분히 큰 로고는 살짝만 안정화 */
+.sponsor.logo-ansys img{ transform:scale(1.04); }
+.sponsor.logo-keyang img{ transform:scale(1.04); }
+.sponsor.logo-jlcpcb img{ transform:scale(1.04); }
+.sponsor.logo-easyeda img{ transform:scale(1.04); }
+.sponsor.logo-keithley img{ transform:scale(1.08); }
+.sponsor.logo-hoosier img{ transform:scale(1.05); }
+.sponsor.logo-kumakerspace img{ transform:scale(1.06); }
+
+@media (max-width:640px){
+  .sponsor{
+    min-height:126px;
+  }
+
+  .sponsor.logo-tektronix img,
+  .sponsor.logo-nswel img,
+  .sponsor.logo-nordlock img,
+  .sponsor.logo-bender img{
+    transform:scale(1.8);
+  }
+}
+
+  
+
+  
+
+  
+/* Samhwa Paint final logo */
+.sponsor.logo-samhwa img{
+  max-width:96%;
+  max-height:108px;
+  transform:scale(1.05);
+}
+
+  
+/* Contact email copy button */
+.copy-email{
+  border:0;
+  font-family:inherit;
+  appearance:none;
+  -webkit-appearance:none;
+}
+
+.copy-email.copied{
+  background:#c9a45c;
+  color:#111;
+}
+
+  
+/* Upgrade 4-8: news board, team identity, motion, mobile nav, contact */
+.mobile-menu-btn{display:none;width:44px;height:44px;border:1px solid rgba(12,17,23,.12);border-radius:14px;background:#fff;color:#111820;font-size:22px;font-weight:900;line-height:1;cursor:pointer}
+.page{animation:pageFade .28s ease both}
+@keyframes pageFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.hero-inner .eyebrow,.hero-inner h1,.hero-inner p,.hero-inner .cta{animation:heroRise .72s ease both}
+.hero-inner h1{animation-delay:.06s}.hero-inner p{animation-delay:.12s}.hero-inner .cta{animation-delay:.18s}
+@keyframes heroRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.panel,.time-card,.team-card,.news-item,.contact-box,.contact-mini-card,.sponsor{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.panel:hover,.time-card:hover,.team-card:hover,.news-item:hover,.contact-mini-card:hover,.sponsor:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(18,26,37,.11)}
+.sponsor:hover{border-color:rgba(201,164,92,.42)}
+.team-card{position:relative;overflow:hidden}
+.team-card:after{content:attr(data-team-no);position:absolute;right:24px;top:18px;color:rgba(139,29,44,.08);font-size:78px;line-height:1;font-weight:950;letter-spacing:-.08em;pointer-events:none}
+.team-card h3{position:relative;z-index:1}.team-card h3:before{display:none}
+.team-badge{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:14px;background:var(--ku-red);color:#fff;font-size:13px;letter-spacing:.02em;font-weight:950;flex:0 0 auto;box-shadow:0 12px 24px rgba(139,29,44,.18)}
+.news-board{border:1px solid var(--line);border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 18px 48px rgba(18,26,37,.06)}
+.news-item{border-bottom:1px solid var(--line);background:#fff}.news-item:last-child{border-bottom:0}
+.news-trigger{width:100%;border:0;background:transparent;padding:24px 28px;display:grid;grid-template-columns:132px 1fr auto;gap:24px;align-items:center;text-align:left;cursor:pointer;font-family:inherit;color:inherit}
+.news-date{color:var(--ku-red);font-size:13px;font-weight:950;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.news-main strong{display:block;color:#111820;font-size:22px;line-height:1.2;letter-spacing:-.045em;margin-bottom:6px}
+.news-main span{display:block;color:#5e6670;font-size:15px;line-height:1.5}
+.news-category{justify-self:end;min-width:104px;text-align:center;padding:8px 12px;border-radius:999px;background:var(--soft);color:#4d555f;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.news-detail{display:none;padding:0 28px 26px 184px;color:#535b66;font-size:16px;line-height:1.75}
+.news-item.open .news-detail{display:block}.news-item.open .news-category{background:var(--ku-red);color:#fff}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:26px}
+.contact-mini-card{padding:22px;border-radius:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+.contact-mini-card strong{display:block;color:#fff;font-size:16px;letter-spacing:-.02em;margin-bottom:6px}
+.contact-mini-card span{display:block;color:rgba(255,255,255,.66);font-size:14px;line-height:1.5}
+.copy-hint{margin-top:8px;font-size:13px;color:rgba(255,255,255,.58)}
+@media (max-width:980px){.mobile-menu-btn{display:grid;place-items:center}.menu{position:absolute;top:76px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 22px 18px;background:#fff;border-bottom:1px solid rgba(12,17,23,.08);box-shadow:0 22px 42px rgba(18,26,37,.10)}.menu.open{display:flex}.menu a{padding:16px 0;border-bottom:1px solid rgba(12,17,23,.08)}.menu a:last-child{border-bottom:0}.news-trigger{grid-template-columns:1fr;gap:10px}.news-category{justify-self:start}.news-detail{padding:0 28px 24px}.contact-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.team-card:after{font-size:58px}.news-trigger{padding:22px}.news-main strong{font-size:20px}.contact-grid{grid-template-columns:1fr}}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand logo-brand" data-page-link="home">
+        <img src="assets/eoulsure-logo.png" alt="EOULSURE logo">
+      </div>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="menu" aria-label="Main navigation">
+        <a href="?page=home" data-page-link="home" class="active">HOME</a>
+        <a href="?page=about" data-page-link="about">ABOUT</a>
+        <a href="?page=sponsor" data-page-link="sponsor">SPONSOR</a>
+        <a href="?page=news" data-page-link="news">NEWS</a>
+        <a href="?page=contact" data-page-link="contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero page active" data-page="home">
+      <img class="hero-ku-mark" src="assets/korea-university-mark.png" alt="Korea University mark">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">Korea University Racing Team</div>
+        <h1>
+          Built by students.<br>
+          <span class="nowrap">Driven by engineering.</span>
+        </h1>
+        <p>
+          EOULSURE is a student-led automotive engineering and motorsport project team
+          at Korea University. We design, build, test, and race our own vehicles while
+          sharing the culture of mobility.
+        </p>
+        <p class="korean-summary">
+          어울수레(EOULSURE)는 여럿이 함께 모여 하나됨'을 뜻하는 어울리다와 &nbsp; '자동차'를 의미하는 수레를 합쳐 명명되었습니다.
+
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" data-page-link="about">Explore the Team</a>
+          <a class="btn secondary" data-page-link="contact">Partner with Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="content-page soft page" data-page="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-label">About</div>
+            <h2 class="section-title">From a garage project<br>to a full-scale mobility team.</h2>
+          </div>
+          <p class="section-desc">
+            Since 1993, EOULSURE has grown from a student car-building club into a multidisciplinary
+            team covering engineering, operations, sponsorship, education, and public outreach.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="panel">
+            <h3>Who we are</h3>
+            <p>
+              EOULSURE is Korea University's Racing Team. Our members work across mechanical,
+              electrical, control, business, and communication roles to turn ideas into running vehicles.
+            </p>
+            <div class="stats">
+              <div class="stat"><strong>1993</strong><span>Official foundation</span></div>
+              <div class="stat"><strong>Baja</strong><span>Early competition history</span></div>
+              <div class="stat"><strong>Formula</strong><span>Current racing platform</span></div>
+              <div class="stat"><strong>EV</strong><span>Electric vehicle development</span></div>
+            </div>
+          </div>
+
+          <div class="panel dark">
+            <h3>What we do</h3>
+            <p>
+              We build vehicles, run engineering education, host industry lectures, collaborate with sponsors,
+              and create opportunities for students to experience real-world product development.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="ku-affiliation">
+          <img src="assets/korea-university-mark.png" alt="Korea University mark">
+          <div>
+            <strong>Based at Korea University</strong>
+            <span>EOULSURE represents student engineering, racing culture, and hands-on mobility projects at Korea University.</span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="time-card">
+            <div class="year">1993</div>
+            <div class="text">EOULSURE was officially founded.</div>
+          </div>
+          <div class="time-card">
+            <div class="year">1993–2011</div>
+            <div class="text">Participated in the Yeungnam University Baja competition.</div>
+          </div>
+          <div class="time-card">
+            <div class="year">2021</div>
+            <div class="text">Entered the FSK C-Formula category.</div>
+          </div>
+          <div class="time-card">
+            <div class="year">2022</div>
+            <div class="text">Entered the FSK E-Formula category.</div>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card" data-team-no="01">
+            <h3><span class="team-badge">01</span>External Relations</h3>
+            <p>
+              The External Relations division secures the budget, infrastructure, and partnerships that make
+              the project possible.
+            </p>
+            <div class="role-list">
+              <div class="role"><strong>Funding</strong><span>Secures internal and external funding opportunities for vehicle development.</span></div>
+              <div class="role"><strong>Brand & Operations</strong><span>Manages team promotion, events, public communication, and project operations.</span></div>
+              <div class="role"><strong>Sponsorship</strong><span>Connects with companies and manages sponsor relationships, parts support, and technical collaborations.</span></div>
+            </div>
+          </article>
+
+          <article class="team-card" data-team-no="02">
+            <h3><span class="team-badge">02</span>Electrical Systems</h3>
+            <p>
+              The Electrical Systems division designs and integrates the vehicle's high-voltage and low-voltage
+              electrical architecture.
+            </p>
+            <div class="role-list">
+              <div class="role"><strong>Battery</strong><span>Develops a 300V-class accumulator pack based on high-voltage systems above 60V.</span></div>
+              <div class="role"><strong>Circuit Design</strong><span>Builds safety shutdown circuits, charging circuits, and custom control PCBs.</span></div>
+              <div class="role"><strong>System Integration</strong><span>Connects electrical components and verifies control, safety, and reliability logic.</span></div>
+            </div>
+          </article>
+
+          <article class="team-card" data-team-no="03">
+            <h3><span class="team-badge">03</span>Chassis</h3>
+            <p>
+              The Chassis division defines the vehicle's performance, stability, and mechanical integrity.
+              It includes suspension, braking, steering, frame, aero, and powertrain.
+            </p>
+            <div class="role-list">
+              <div class="role"><strong>Suspension</strong><span>Designs suspension geometry to absorb road inputs and maintain tire contact.</span></div>
+              <div class="role"><strong>Brakes</strong><span>Develops braking systems for stable deceleration and stopping performance.</span></div>
+              <div class="role"><strong>Steering</strong><span>Designs steering geometry and mechanisms for precise driver input.</span></div>
+              <div class="role"><strong>Frame</strong><span>Creates the vehicle structure and mounting points for major components.</span></div>
+              <div class="role"><strong>Aerodynamics</strong><span>Improves airflow, efficiency, and high-speed stability.</span></div>
+              <div class="role"><strong>Powertrain</strong><span>Transfers motor or drivetrain power to the wheels efficiently and reliably.</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="awards">
+          <table>
+            <thead>
+              <tr><th>Year</th><th>Category</th><th>Achievement</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2005</td><td>Competition</td><td>1st place, Yeungnam University Competition Report</td></tr>
+              <tr><td>2006</td><td>Competition</td><td>3rd place, Yeungnam University Competition Report</td></tr>
+              <tr><td>2007</td><td>Competition</td><td>3rd place, KSAE Student Vehicle Competition, New Technology Excellence Award</td></tr>
+              <tr><td>2008</td><td>Competition</td><td>11th place, Yeungnam University Competition</td></tr>
+              <tr><td>2009</td><td>Competition</td><td>Encouragement Award, 18th overall, Chuncheon KSAE Competition</td></tr>
+              <tr><td>2010</td><td>Competition</td><td>20th overall, Gunsan KSAE Competition</td></tr>
+              <tr><td>2011</td><td>Competition</td><td>Hosted and participated in the Bosch Competition</td></tr>
+              <tr><td>2011</td><td>Competition</td><td>14th place, KSAE Competition</td></tr>
+              <tr><td>2012</td><td>Program</td><td>Grand Prize, GM Automotive Experience Camp</td></tr>
+              <tr><td>2016</td><td>Competition</td><td>Awarded in the KSAE Baja Competition</td></tr>
+              <tr><td>2017</td><td>Competition</td><td>Awarded in the KSAE Baja Competition</td></tr>
+              <tr><td>2020</td><td>Competition</td><td>5th place, KSAE Baja Competition</td></tr>
+              <tr><td>2022</td><td>Competition</td><td>Completed the Korea Formula Grand Prix</td></tr>
+              <tr><td>2023</td><td>Campus</td><td>3rd place, Korea University Club Activation Project</td></tr>
+              <tr><td>2023</td><td>Campus</td><td>Excellence Award, KU Makerspace Makerthon</td></tr>
+              <tr><td>2024</td><td>Global Collaboration</td><td>2nd place, IDEEA Project Competition “Urban Charging Solution” in cooperation with Volkswagen AG</td></tr>
+              <tr><td>2025</td><td>Program</td><td>Selected as a Z by HP Workstation Master Ambassador</td></tr>
+              <tr><td>2025</td><td>Competition</td><td>Excellence Award, National Aerospace Makerthon for Undergraduate and Graduate Students</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSOR -->
+    <section class="sponsor-page page" data-page="sponsor">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Sponsor</div>
+            <h2 class="section-title">Powered by partners<br>who believe in builders.</h2>
+          </div>
+          <p class="section-desc">
+            EOULSURE's projects are made possible through the support of companies, local brands,
+            engineering software providers, manufacturing partners, and the Korea University community.
+          </p>
+        </div>
+
+        <div class="sponsors">
+          <div class="sponsor logo-tall youngchul-stack">
+            <img class="youngchul-top" src="assets/sponsors/youngchul-burger-top.png" alt="영철버거 캐릭터 로고" loading="lazy">
+            <img class="youngchul-bottom" src="assets/sponsors/youngchul-burger-bottom.png" alt="영철버거 텍스트 로고" loading="lazy">
+          </div>
+          <div class="sponsor logo-square logo-egong">
+            <img src="assets/sponsors/egong-gimbap.png" alt="이공김밥 logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-xgarage">
+            <img src="assets/sponsors/x-garage.png" alt="X-Garage logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-tektronix">
+            <img src="assets/sponsors/tektronix.svg" alt="Tektronix logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-hyundai">
+            <img src="assets/sponsors/hyundai-mobis.png" alt="HYUNDAI MOBIS logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-ansys">
+            <img src="assets/sponsors/ansys.svg" alt="Ansys logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-square logo-nswel">
+            <img src="assets/sponsors/nswel.png" alt="NS WEL logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-cadence">
+            <img src="assets/sponsors/cadence.png" alt="Cadence logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-tall logo-samhwa">
+            <img src="assets/sponsors/samhwa-paint.png" alt="SAMHWA PAINT logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-keyang">
+            <img src="assets/sponsors/keyang.png" alt="KEYANG logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-jlcpcb">
+            <img src="assets/sponsors/jlcpcb.svg" alt="JLCPCB logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-easyeda">
+            <img src="assets/sponsors/easyeda.svg" alt="EasyEDA logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-keithley">
+            <img src="assets/sponsors/keithley.svg" alt="Keithley logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-solvers">
+            <img src="assets/sponsors/solvers.png" alt="Solvers logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-nordlock">
+            <img src="assets/sponsors/nord-lock-group.svg" alt="NORD-LOCK GROUP logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-keunyung">
+            <img src="assets/sponsors/keunyung.png" alt="KEUNYUNG logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-ntrex">
+            <img src="assets/sponsors/ntrex.png" alt="NTREX logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-bender">
+            <img src="assets/sponsors/bender.svg" alt="BENDER logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-woonri">
+            <img src="assets/sponsors/woonri-solution.png" alt="Woonri Solution logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-3dconnexion">
+            <img src="assets/sponsors/3dconnexion.png" alt="3Dconnexion logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-mouser">
+            <img src="assets/sponsors/mouser-electronics.svg" alt="Mouser Electronics logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-square logo-eleparts">
+            <img src="assets/sponsors/eleparts.jpg" alt="eLeParts logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-square logo-tilton">
+            <img src="assets/sponsors/tilton-racing.png" alt="Tilton Racing logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-linsol">
+            <img src="assets/sponsors/linsol.jpg" alt="Linsol logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-blackyak">
+            <img src="assets/sponsors/blackyak.svg" alt="BLACKYAK logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-hoosier">
+            <img src="assets/sponsors/hoosier.png" alt="Hoosier logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-square logo-aark">
+            <img src="assets/sponsors/aark.png" alt="AARK logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-kumakerspace">
+            <img src="assets/sponsors/ku-makerspace.png" alt="KU Makerspace logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-ku">
+            <img src="assets/sponsors/korea-university.gif" alt="Korea University logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-kualumni">
+            <img src="assets/sponsors/ku-alumni.jpg" alt="Korea University Alumni Association logo" loading="lazy">
+          </div>
+          <div class="sponsor logo-wide logo-amcl">
+            <img src="assets/sponsors/amcl.png" alt="AMCL logo" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="content-page page" data-page="news">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-label">News</div>
+            <h2 class="section-title">Team updates,<br>events, and milestones.</h2>
+          </div>
+          <p class="section-desc">
+            Follow EOULSURE's activities beyond the workshop, from engineering reviews and racing projects
+            to lectures, education programs, and external collaborations.
+          </p>
+        </div>
+
+        <div class="news-board">
+          <article class="news-item open">
+            <button class="news-trigger" type="button">
+              <span class="news-date">2026.07</span>
+              <span class="news-main"><strong>EOULSURE official website renewal</strong><span>The team homepage was renewed with sponsor, news, and contact sections.</span></span>
+              <span class="news-category">Notice</span>
+            </button>
+            <div class="news-detail">EOULSURE is building a more official digital presence to introduce the team, organize partner information, and share updates about vehicle development, events, and collaborations.</div>
+          </article>
+          <article class="news-item">
+            <button class="news-trigger" type="button">
+              <span class="news-date">2025</span>
+              <span class="news-main"><strong>Selected as Z by HP Workstation Master Ambassador</strong><span>EOULSURE was selected for a workstation ambassador program supporting student engineering work.</span></span>
+              <span class="news-category">Program</span>
+            </button>
+            <div class="news-detail">Through the program, the team continues to expand its design and engineering capabilities across CAD, simulation, documentation, and vehicle development workflows.</div>
+          </article>
+          <article class="news-item">
+            <button class="news-trigger" type="button">
+              <span class="news-date">2024–25</span>
+              <span class="news-main"><strong>Industry expert lecture series</strong><span>EOULSURE hosted lectures with experts from Formula 1 and aerospace engineering.</span></span>
+              <span class="news-category">Lecture</span>
+            </button>
+            <div class="news-detail">The team hosted lectures with Dr. Namho Kim, the first Korean F1 engineer, and Beomjun Kim, a KAI KF-21 wing and empennage design engineer, connecting students with real engineering experience.</div>
+          </article>
+          <article class="news-item">
+            <button class="news-trigger" type="button">
+              <span class="news-date">2023</span>
+              <span class="news-main"><strong>Moved into KU PI-ville 99</strong><span>The team joined Korea University's Crimson Startup Support Foundation program.</span></span>
+              <span class="news-category">Campus</span>
+            </button>
+            <div class="news-detail">By joining PI-ville 99, EOULSURE strengthened its project infrastructure and expanded its activities beyond vehicle manufacturing into entrepreneurship and public outreach.</div>
+          </article>
+          <article class="news-item">
+            <button class="news-trigger" type="button">
+              <span class="news-date">2022</span>
+              <span class="news-main"><strong>EOULSURE e was founded</strong><span>The team expanded into education, outreach, and mobility culture activities.</span></span>
+              <span class="news-category">Expansion</span>
+            </button>
+            <div class="news-detail">EOULSURE established its entrepreneurship club, EOULSURE e, to go beyond car building and share automotive engineering and motorsports culture with a wider audience.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-page page" data-page="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's build the next<br>mobility project together.</h2>
+          </div>
+          <p class="section-desc">
+            For sponsorship, partnerships, lectures, education programs, or collaboration proposals,
+            contact the EOULSURE team.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-mini-card"><strong>Sponsorship</strong><span>Parts, materials, software, funding, and long-term partner support.</span></div>
+          <div class="contact-mini-card"><strong>Partnership</strong><span>Company collaboration, technical support, and joint mobility projects.</span></div>
+          <div class="contact-mini-card"><strong>Lecture / Education</strong><span>Guest lectures, student programs, and motorsport education activities.</span></div>
+          <div class="contact-mini-card"><strong>General Inquiry</strong><span>Team introduction, events, media, and official communication.</span></div>
+        </div>
+
+        <div class="contact-box">
+          <div>
+            <strong>EOULSURE Official Contact</strong>
+            <p>Korea University Racing Team</p>
+            <div class="copy-hint">Click the email button to copy the address.</div>
+          </div>
+          <button class="btn primary copy-email" type="button" data-email="minsung4677@korea.ac.kr" onclick="copyEmailAddress(this)">minsung4677@korea.ac.kr</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© EOULSURE · 어울수레. Korea University Racing Team.</span>
+      <span>Designed for student engineering, motorsport, and mobility projects.</span>
+    </div>
+  </footer>
+
+  <script>
+    const validPages = ["home", "about", "sponsor", "news", "contact"];
+
+    function getInitialPage(){
+      const params = new URLSearchParams(window.location.search);
+      const pageFromQuery = params.get("page");
+      if(validPages.includes(pageFromQuery)) return pageFromQuery;
+
+      const hash = window.location.hash.replace("#", "");
+      if(validPages.includes(hash)) return hash;
+
+      return "home";
+    }
+
+    function setActivePage(page, updateUrl = true){
+      if(!validPages.includes(page)) page = "home";
+
+      document.querySelectorAll("[data-page]").forEach(section => {
+        section.classList.toggle("active", section.dataset.page === page);
+      });
+
+      document.querySelectorAll("[data-page-link]").forEach(link => {
+        link.classList.toggle("active", link.dataset.pageLink === page);
+      });
+
+      window.scrollTo(0, 0);
+
+      if(updateUrl){
+        const newUrl = page === "home"
+          ? window.location.pathname
+          : `${window.location.pathname}?page=${page}`;
+        history.pushState({page}, "", newUrl);
+      }
+    }
+
+    document.querySelectorAll("[data-page-link]").forEach(link => {
+      link.addEventListener("click", event => {
+        const page = link.dataset.pageLink;
+        if(!validPages.includes(page)) return;
+
+        event.preventDefault();
+        setActivePage(page, true);
+      });
+    });
+
+    window.addEventListener("popstate", () => {
+      setActivePage(getInitialPage(), false);
+    });
+
+    setActivePage(getInitialPage(), false);
+
+
+
+    const mobileMenuButton = document.querySelector(".mobile-menu-btn");
+    const menu = document.querySelector(".menu");
+
+    if(mobileMenuButton && menu){
+      mobileMenuButton.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("open");
+        mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+        mobileMenuButton.textContent = isOpen ? "×" : "☰";
+      });
+
+      document.querySelectorAll(".menu a").forEach(link => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("open");
+          mobileMenuButton.setAttribute("aria-expanded", "false");
+          mobileMenuButton.textContent = "☰";
+        });
+      });
+    }
+
+    document.querySelectorAll(".news-trigger").forEach(trigger => {
+      trigger.addEventListener("click", () => {
+        const item = trigger.closest(".news-item");
+        if(item) item.classList.toggle("open");
+      });
+    });
+
+    function copyEmailAddress(button){
+      const email = button.dataset.email || "minsung4677@korea.ac.kr";
+      const showResult = (success) => {
+        button.textContent = success ? "Copied" : "Copy failed";
+        if(success) button.classList.add("copied");
+        setTimeout(() => {
+          button.textContent = email;
+          button.classList.remove("copied");
+        }, 1600);
+      };
+      const fallbackCopy = () => {
+        const textarea = document.createElement("textarea");
+        textarea.value = email;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.left = "-9999px";
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        let copied = false;
+        try{copied = document.execCommand("copy");}catch(error){copied = false;}
+        document.body.removeChild(textarea);
+        if(copied){showResult(true);}else{window.prompt("이메일 주소를 복사하세요.", email);}
+      };
+      if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(email).then(() => showResult(true)).catch(() => fallbackCopy());
+      }else{
+        fallbackCopy();
+      }
+    }
+
+  </script>
+</body>
+</html>

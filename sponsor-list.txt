@@ -1,0 +1,31 @@
+1. 영철버거 -> assets/sponsors/youngchul-burger-top.png + assets/sponsors/youngchul-burger-bottom.png
+2. 이공김밥 -> assets/sponsors/egong-gimbap.png
+3. X-Garage -> assets/sponsors/x-garage.png
+4. Tektronix -> assets/sponsors/tektronix.svg
+5. HYUNDAI MOBIS -> assets/sponsors/hyundai-mobis.png
+6. Ansys -> assets/sponsors/ansys.svg
+7. NS WEL -> assets/sponsors/nswel.png
+8. Cadence -> assets/sponsors/cadence.png
+9. SAMHWA PAINT -> assets/sponsors/samhwa-paint.png
+10. KEYANG -> assets/sponsors/keyang.png
+11. JLCPCB -> assets/sponsors/jlcpcb.svg
+12. EasyEDA -> assets/sponsors/easyeda.svg
+13. Keithley -> assets/sponsors/keithley.svg
+14. Solvers -> assets/sponsors/solvers.png
+15. NORD-LOCK GROUP -> assets/sponsors/nord-lock-group.svg
+16. KEUNYUNG -> assets/sponsors/keunyung.png
+17. NTREX -> assets/sponsors/ntrex.png
+18. BENDER -> assets/sponsors/bender.svg
+19. Woonri Solution -> assets/sponsors/woonri-solution.png
+20. 3Dconnexion -> assets/sponsors/3dconnexion.png
+21. Mouser Electronics -> assets/sponsors/mouser-electronics.svg
+22. eLeParts -> assets/sponsors/eleparts.jpg
+23. Tilton Racing -> assets/sponsors/tilton-racing.png
+24. Linsol -> assets/sponsors/linsol.jpg
+25. BLACKYAK -> assets/sponsors/blackyak.svg
+26. Hoosier -> assets/sponsors/hoosier.png
+27. AARK -> assets/sponsors/aark.png
+28. KU Makerspace -> assets/sponsors/ku-makerspace.png
+29. Korea University -> assets/sponsors/korea-university.gif
+30. Korea University Alumni Association -> assets/sponsors/ku-alumni.jpg
+31. AMCL -> assets/sponsors/amcl.png
